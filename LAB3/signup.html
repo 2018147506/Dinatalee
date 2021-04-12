@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "main.css">
+	<title>회원가입</title>
+</head>
+<body>
+	<h1>그래그래 어서오고</h1>
+	<div class="group">
+		<div class="first"><a href="login.html">로그인</a></div>&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="second">회원가입</div>
+	</div>
+	</br>
+	<h3>개인정보</h3>
+	<form method = "post" action="login.html">
+	<p><label>이름 :
+		<input type = "text" id = "name" placeholder="Name"/ autofocus autocomplete="on" required></label></p>
+	<p><label>생년월일 :
+		<input type = "date" autocomplete="on" /></label></p>
+	<p><label>학년 :
+		<input type = "number" min = "1" max ="5" step = "1" value="2" ></label>(1~5학년)</h3>
+	<p><label>전화번호 :
+		<input type = "tel" placeholder="(###) ####-####" pattern="\(\d{3}\)+\d{4}-\d{4}" required />
+	</label></p>
+	<p><label>E-mail :
+		<input type = "email" placeholder="id@domain.com" autocomplete="on"></label></p>
+	<p><label>PW :
+		<input type="password" id = "PW" autocomplete="off"></label></p>
+	<p><label>PW check :
+		<input type="password" id = "PW check" autocomplete="off"></label></p>
+	<p><input type = "submit" value = "회원가입" />
+		<input type = "reset" value = "취소"/>
+	</p>
+	</form>
+
+</body>
+</html>
