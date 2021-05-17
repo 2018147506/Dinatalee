@@ -3,7 +3,10 @@
 <head>
 	<link rel = "stylesheet" type = "text/css" href = "main.css" >
 	<script>
-		fetch("product.json").then((response) => console.log(response));
+		fetch("product.json")
+		.then((response) => return response.json())
+		.then((data) => console.log(data));
+		.catch(error => {console.log('Error:', error);});
 	</script>
 	<title> 메인페이지 </title>
 </head>
