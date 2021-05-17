@@ -3,33 +3,26 @@
 <head>
 	<link rel = "stylesheet" type = "text/css" href = "main.css" >
 	<script>
-		function getinfo(){
-			return new Promise(function (receive){
-				fetch("./product.json")
-					.then(function (response){
-						return response.json();
-					})
-					.then(function (data){
-						receive(JSON.stringify(data));
-					});
-				});
-		}
-		(async function(){
-			jsonData = await fetchData();
-			$(".getJson").text(jsonData);
-		})();
+		fetch('https://github.com/2018147506/HomeworkRepository/blob/main/LAB4/product.json', {
+  			credentials: 'name', // Useful for including session ID (and, IIRC, authorization headers)
+		})
+		.then(response => response.json())
+		.then(data => {
+  			console.log(data) // Prints result from `response.json()`
+		})
+		.catch(error => console.error(error))
 	</script>
 	<title> 메인페이지 </title>
 </head>
 <body>
 	<div class="limit">
 	<h1 class = "tit">그래그래 어서오고</h1>
-	<p id="demo"></p>
 	<div class="group" id = "name">
 		<div class="first">메인페이지</div>&nbsp;&nbsp;
 		<div class="second"><a href="login.html">&nbsp;&nbsp;로그인&nbsp;&nbsp;</a></div>
 		<div class="third"><a href="signup.html">&nbsp;&nbsp;회원가입&nbsp;&nbsp;</a></div>
 	</div>
+	<p>data[0]</p>
 	<div class="fimg"><img src="gucci.jpeg" alt="gucci"></div>
 	<div class="fimg"><img src="9Rada.jpeg" alt="9Rada"></div>
 	<div class="titleintro" id = "name">인삿말</div>
