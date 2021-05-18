@@ -30,6 +30,13 @@ body{
 
 }
 
+.pro11{
+	position : absolute;
+	top : 70%;
+	right: 50%;
+	z-index: 2;
+}
+
 .limit{
 	width: 1000px;
 	left: 50%;
@@ -41,21 +48,9 @@ body{
 	from {margin-left: 100%; width: 300%;}
 	to {margin-left: 0%; width: 100%}
 }
-.intro{
-	column-count: 2;
-	column-gap: 3px;
-	column-width: 2;
-	column-rule-style: solid; 
-	column-rule-width: 2px;
-	clear : both;
-}
-.titleintro{
-	border-bottom: solid;
-	border-bottom-color: yellow;
-	font-size: 30px;
-	clear: both;
-}
+
 .fimg{
+	position: relative;
 	width: 250px;
 	height: 250px;
 	border-style: solid;
@@ -64,8 +59,13 @@ body{
 	margin-right: 10px;
 }
 
-p{
-	font-family: 'Nanum Pen Script', cursive;
+.click{
+	position:absolute;
+	top:0%;
+	left:0%;
+	font-size: 10pt;
+	color : blue;
+	z-index: 1;
 }
 
 h1{
@@ -89,16 +89,12 @@ a{
 }
 
 img{
-	height: 100px;
-	width: 100px;
-	transition: width height 2s;
-
-}
-img:hover{
 	height: 250px;
 	width: 250px;
-	transition-duration: 2s;
+	
+
 }
+
 
 p > a{
 	font-family: 'Open Sans', sans-serif;
