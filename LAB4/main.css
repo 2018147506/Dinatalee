@@ -97,9 +97,7 @@ form{
 
 #product > div img{
 	position: absolute;
-	bottom: 10%;
-	right: 10%;
-	height: 75%;
+	height: 30%;
 }
 #leftside{
 	float : left;
