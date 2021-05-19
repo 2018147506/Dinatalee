@@ -38,11 +38,22 @@
 			pic.src = one.img;
 			pic.alt = one.name + ".jpeg";
 
+			describe.classList.add("show");
+			describe.innerText = "더보기";
+			describe.addEventListener("click", formore, false);
+
+			itemname.classList.add("name");
+			itemname.innerText = infos.name;
+
 			oneitem.appendChild(describe);
 			oneitem.appendChild(pic);
 			oneitem.appendChild(price);
 
 			document.getElementById("product").appendChild(oneitem);
+		}
+
+		function formore(){
+
 		}
 
 		function getsearch(){
