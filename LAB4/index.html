@@ -5,7 +5,7 @@
 	<script>
 		let counter = 0;
 		let category = "전체";
-		let search = "";
+		let input = "";
 		let infos;
 
 		fetch('product.json')
@@ -15,15 +15,43 @@
 			.catch(err => { console.log( err )});
 
 		function display() {
+			counter = 0;
 
+			while (counter < infos.length){
+				if (category == "전체"){
+					addtoshow(infos[counter]);
+				}
+				else if(infos[counter].type.includes(category) && infos[counter].name.includes(input)){
+					addtoshow(infos[counter]);
+				}
+				counter++;
+			}
+		}
+
+		function addtoshow(one){
+			let oneitem = document.createElement("div");
+			let describe = document.createElement("button");
+			let itemname = document.createElement("div");
+			let price = document.createElement("div");
+			let pic = document.createElement("img");
+
+			pic.src = one.img;
+			pic.alt = one.name + ".jpeg";
+
+			oneitem.appendChild(describe);
+			oneitem.appendChild(pic);
+			oneitem.appendChild(price);
+
+			document.getElementById("product").appendChild(oneitem);
 		}
 
 		function getsearch(){
 			category = document.getElementById("space").value;
 			search = document.getElementById("text").value;
+			display();
 		}
 
-		document.addEventListener("", () =>{
+		document.addEventListener("DOMContentLoaded", () =>{
 			document.getElementById("search").addEventListener("click", getsearch, false);
 		})
 	</script>
