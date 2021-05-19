@@ -35,8 +35,7 @@
 			let price = document.createElement("div");
 			let pic = document.createElement("img");
 
-			pic.src = one.img;
-			pic.alt = one.name + ".jpeg";
+			
 
 			describe.classList.add("show");
 			describe.innerText = "더보기";
@@ -49,6 +48,9 @@
 			oneitem.appendChild(pic);
 			oneitem.appendChild(price);
 
+			pic.src = one.img;
+			pic.alt = one.name + ".jpeg";
+			
 			price.classList.add("itemprice");
 			
 			document.getElementById("product").appendChild(oneitem);
@@ -56,7 +58,6 @@
 
 		function formore(){
 			let contents = this.parentNode.childNodes;
-			
 		}
 
 		function getsearch(){
