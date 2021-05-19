@@ -14,10 +14,7 @@
 			.then(x => {display();})
 			.catch(err => { console.log( err )});
 
-		window.onscroll = () => {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight)
-                display();
-        }
+		
 
 		function display() {
 			counter = 0;
