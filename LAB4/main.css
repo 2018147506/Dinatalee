@@ -105,6 +105,15 @@ img{
 	float : left;
 }
 
+#show{
+	position: absolute;
+	top: 3%;
+	left: 3%
+	width : 50%;
+	height: 5%;
+	font-size: 5px;
+}
+
 /* animation */
 
 @keyframes tit {
@@ -148,3 +157,4 @@ input[type="reset"]
 	width: 80px;
 	height: 50px;
 }
+
