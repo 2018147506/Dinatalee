@@ -72,7 +72,6 @@ footer{
 form{
 	display: flex;
 	flex-flow: column;
-	align-items: stretch;
 }
 /* 화면 제한 */
 
