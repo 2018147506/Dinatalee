@@ -14,7 +14,9 @@
 			.then(x => {display();})
 			.catch(err => { console.log( err )});
 
-		
+		document.addEventListener("DOMContentLoaded", () =>{
+			document.getElementById("search").addEventListener("click", getsearch, false);
+		});
 
 		function display() {
 			counter = 0;
@@ -66,12 +68,15 @@
 			category = document.getElementById("space").value;
 			search = document.getElementById("text").value;
 			counter = 0;
+			neat();
 			display();
 		}
 
-		document.addEventListener("DOMContentLoaded", () =>{
-			document.getElementById("search").addEventListener("click", getsearch, false);
-		});
+		function neat(){
+			let x = document.getElementById("product");
+			while (x.hasChildNodes())
+				x.removeChild(items.firstChild);
+		}
 	</script>
 	<title> 메인페이지 </title>
 </head>
@@ -105,7 +110,7 @@
 				<div>
 					<button id="search">검색하기</button>
 				</div>
-				</form>
+			</form>
 			</div>
 			<div id="product" class="border">
 			</div>
