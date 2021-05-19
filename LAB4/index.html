@@ -17,12 +17,6 @@
 		document.addEventListener("DOMContentLoaded", () =>{
 			document.getElementById("search").addEventListener("click", getsearch, false);
 		});
-		
-		window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        display();
-    }
-};
 
 		function display() {
 
@@ -66,22 +60,16 @@
 		}
 
 		function formore(){
-			let contents = this.parentNode.childNodes;
+			
 		}
 
 		function getsearch(){
 			category = document.getElementById("space").value;
 			search = document.getElementById("text").value;
 			counter = 0;
-			neat();
 			display();
 		}
 
-		function neat(){
-			let x = document.getElementById("product");
-			while (x.hasChildNodes())
-				x.removeChild(items.firstChild);
-		}
 	</script>
 	<title> 메인페이지 </title>
 </head>
