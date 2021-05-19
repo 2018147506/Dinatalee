@@ -50,13 +50,17 @@
 			oneitem.appendChild(price);
 
 			price.classList.add("itemprice");
-			
+			price.innerText = infos.price.toString();
 
 			document.getElementById("product").appendChild(oneitem);
 		}
 
 		function formore(){
-
+			let contents = this.parentNode.childNodes;
+			contents[0].style.display = "none";
+            contents[1].style.display = "block";
+            contents[2].style.height = "55%";
+            contents[3].style.display = "block";
 		}
 
 		function getsearch(){
