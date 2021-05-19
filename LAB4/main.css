@@ -95,7 +95,7 @@ form{
 	width: 80%;
 }
 
-img{
+#product > div img{
 	position: absolute;
 	bottom: 10%;
 	right: 10%;
