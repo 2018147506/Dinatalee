@@ -91,6 +91,10 @@ form{
 	height: 200px;
 }
 
+#product{
+	width: 80%;
+}
+
 img{
 	position: absolute;
 	bottom: 10%;
