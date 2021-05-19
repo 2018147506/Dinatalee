@@ -91,6 +91,13 @@ form{
 	height: 200px;
 }
 
+img{
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	height: 75%;
+}
+
 /* animation */
 
 @keyframes tit {
@@ -134,4 +141,3 @@ input[type="reset"]
 	width: 80px;
 	height: 50px;
 }
-
