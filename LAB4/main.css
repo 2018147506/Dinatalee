@@ -67,12 +67,15 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 form{
 	display: flex;
 	flex-flow: column;
+	align-items: stretch;
 }
+
 /* 화면 제한 */
 
 .limit{
@@ -81,6 +84,11 @@ form{
 	position: absolute;
 	transform: translate(-50%);
 	animation-duration: 0s;
+}
+
+#product > div{
+	width: 200px;
+	height: 200px;
 }
 
 /* animation */
@@ -126,3 +134,4 @@ input[type="reset"]
 	width: 80px;
 	height: 50px;
 }
+
