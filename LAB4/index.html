@@ -51,12 +51,12 @@
 
 			price.classList.add("itemprice");
 			
-
 			document.getElementById("product").appendChild(oneitem);
 		}
 
 		function formore(){
 			let contents = this.parentNode.childNodes;
+			
 		}
 
 		function getsearch(){
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 		<div id="sq">
-			<form>
+			<div id="leftside">
 				<div>
 					<label>카테고리:</label>
 					<select id="space">
@@ -98,9 +98,9 @@
 					<input type="text" id = "text">
 				</div>
 				<div>
-					<button id="search">검색하기</button>
+					<form><button id="search">검색하기</button></form>
 				</div>
-			</form>
+			</div>
 			<div id="product" class="border">
 			</div>
 		</div>
