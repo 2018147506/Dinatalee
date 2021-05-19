@@ -1,11 +1,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans&display=swap" rel="stylesheet">
 
-body{
-	color: #ffe6cf;
-	font-size: 15px;
-	
+html{
+	background-color: yellow;
 }
+
+body{
+	font-size: 15px;
+}
+
+/* font style */
+.tit{
+	font-size: 45px;
+}
+
+.footer{
+	background-color: gray;
+	position: absolute;
+	bottom: 90%;
+	width: 95%;
+	height: 70px;
+}
+#intro{
+	font-size: 13px;
+}
+/* linking */
 
 .group{
 	display: flex;
@@ -14,50 +33,71 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	justify-content: flex-start;
 }
+
 .first{
 	text-decoration: overline underline;
 	text-decoration-color: red;
 }
-.second{
-}
-.third{
+
+a{
+	text-decoration-line: none;
+	color: black;
 }
 
-.tit{
-	animation: tit;
-	animation-duration: 1s;
-	animation-direction: alternate;
-
+/* border lines*/
+.limit{
+	border-style: solid;
+}
+*{
+	box-sizing: border-box;
+}
+.border{
+	border-style: solid;
+}
+footer{
+	border-top: solid;
 }
 
-.pro11{
-	position : absolute;
-	top : 70%;
-	right: 50%;
-	z-index: 2;
+/* flex */
+.sq{
+	display: flex;
 }
+
+#product{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+form{
+	display: flex;
+	flex-flow: column;
+	align-items: stretch;
+}
+/* 화면 제한 */
 
 .limit{
 	width: 1000px;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%);
+	animation-duration: 0s;
 }
+
+/* animation */
 
 @keyframes tit {
 	from {margin-left: 100%; width: 300%;}
 	to {margin-left: 0%; width: 100%}
 }
 
-.fimg{
-	position: relative;
-	width: 250px;
-	height: 250px;
-	border-style: solid;
-	padding: 0;
-	float: left;
-	margin-right: 10px;
+.tit{
+	animation: tit;
+	animation-duration: 1s;
+	animation-direction: alternate;
 }
+
+/* button */
 
 .click{
 	position:absolute;
@@ -68,45 +108,6 @@ body{
 	z-index: 1;
 }
 
-h1{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 45px;
-	border-bottom: solid;
-
-}
-
-h2{
-	border-top: solid;
-	border-bottom: solid;
-	border-top-color: red;
-	border-bottom-color: red;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-	font-size: 30px;
-}
-
-img{
-	height: 250px;
-	width: 250px;
-	
-
-}
-
-
-p > a{
-	font-family: 'Open Sans', sans-serif;
-	background-color: skyblue;
-	padding: 13px;
-	margin: 10px;
-	width: 80px;
-	height: 80px;
-	font-size: 15px;
-	border: solid;
-	border-width: 2px;
-}
 
 input[type="submit"]
 {
@@ -126,4 +127,3 @@ input[type="reset"]
 	width: 80px;
 	height: 50px;
 }
-
