@@ -101,6 +101,9 @@ img{
 	right: 10%;
 	height: 75%;
 }
+#leftside{
+	float : left;
+}
 
 /* animation */
 
@@ -145,4 +148,3 @@ input[type="reset"]
 	width: 80px;
 	height: 50px;
 }
-
