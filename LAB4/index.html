@@ -3,44 +3,68 @@
 <head>
 	<link rel = "stylesheet" type = "text/css" href = "main.css" >
 	<script>
-		fetch('product.json').then(function(response) {
-  			return response.json();
-		}).then(function(json) {
-  			let product = json;
-		}).catch(function(err) {
-  			console.log('Fetch problem: ' + err.message);
-		});
+		let counter = 0;
+		let category = "전체";
+		let search = "";
+		let infos;
 
-		let pro = JSON.stringify(product);
-		let x = pro.name;
+		fetch('product.json')
+			.then(response => response.json())
+			.then(json => {infos = json;})
+			.then(x => {display();})
+			.catch(err => { console.log( err )});
 
-		document.getElementById("pro1").addEventListener("click", display);
+		function display() {
 
-		function display(){
-			document.getElementById("pro11").innerHTML = "ahf";
 		}
+
+		function getsearch(){
+			category = document.getElementById("space").value;
+			search = document.getElementById("text").value;
+		}
+
+		document.addEventListener("", () =>{
+			document.getElementById("search").addEventListener("click", getsearch, false);
+		})
 	</script>
 	<title> 메인페이지 </title>
 </head>
 <body>
 	<div class="limit">
-	<h1 class = "tit">그래그래 어서오고</h1>
-	<div class="group" id = "name">
-		<div class="first">메인페이지</div>&nbsp;&nbsp;
-		<div class="second"><a href="login.html">&nbsp;&nbsp;로그인&nbsp;&nbsp;</a></div>
-		<div class="third"><a href="signup.html">&nbsp;&nbsp;회원가입&nbsp;&nbsp;</a></div>
-	</div>
-	<p>x</p>
-
-	<div class="fimg">
-		<img src="gucci.jpeg" alt="gucci">
-		<button class="click" id="pro1">click here to check
-		</button>
-		<p id="pro11">s</p>
-	</div>
-
-	<div class="fimg"><img src="9Rada.jpeg" alt="9Rada">
-		<button class="click" id="pro2">click here to check</button>
+		<div class="border">
+			<h1 class = "tit">그래그래 어서오고</h1>
+			<div class="group">
+				<div class="first">메인페이지</div>&nbsp;&nbsp;
+				<a href="login.html" id="second">&nbsp;&nbsp;로그인&nbsp;&nbsp;</a>
+				<a href="signup.html" id="third">&nbsp;&nbsp;회원가입&nbsp;&nbsp;</a>
+			</div>
+		</div>
+		<div id="sq">
+			<form>
+				<div>
+					<label>카테고리:</label>
+					<select id="space">
+						<option selected>전체</option>
+						<option>상의</option>
+						<option>하의</option>
+						<option>신발</option>
+					</select>
+				</div>
+				</br>
+				<div>
+					<label>검색:</label>
+					<input type="text" id = "text">
+				</div>
+				<div>
+					<button id="search">검색하기</button>
+				</div>
+			</form>
+			<div id="product" class="border">item</div>
+		</div>
+		<footer>
+			<div id="intro">저희는 진심을 다하여 물건을 만들었고 직접 고객 여러분께 판매하므로 유통 마진을 최소화 하여 어디서도 볼 수 없는 가격을 이룩해 냈습니다. 저희는 이 일을 장사라고 생각하지 않습니다. 여러분에게 정말로 업계 최고의 제품들을 소개해 드립니다. 여러분의 구매로 생긴 수익은 그저 이 사이트를 유지하는 서버비용, 최소한의 인건비로만 쓰일 뿐 고객님들께 좋은 제품을 소개시켜 드리려는 열정 하나로 열심히 일하고 있습니다. 한 번 써보시면 정말 좋다는 것을 알게 되실 겁니다. 주변 지인분들께도 소식을 전해주신다면 그 추천인에 따라 저희가 회원 등급을 올려드려 더욱 더 싼 가격에 구매 가능하시니 많은 소개 부탁드립니다.
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
