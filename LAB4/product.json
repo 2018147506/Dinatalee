@@ -2,7 +2,7 @@
 		{
 			"name": "fake prada",
 			"price": "32,000",
-			"img": "9Rada.jpeg",
+			"img": "9rada.jpeg",
 			"type":"상의"
 		},
 		{
@@ -11,5 +11,40 @@
 			"img": "gucci.jpeg",
 			"type":"상의"
 		}
+		{
+			"name": "adasdas",
+			"price": "30,000",
+			"img": "adasdas.jpeg",
+			"type": "신발"
+		}
+		{
+			"name": "azides",
+			"price": "25,000",
+			"img": "azides.jpeg",
+			"type": "상의"
+		}
+		{
+			"name": "ccome",
+			"price": "50,000",
+			"img": "ccome.jpeg",
+			"type": "상의"
+		}
+		{
+			"name": "spyder",
+			"price": "70,000",
+			"img": "des.jpeg",
+			"type": "상의"
+		}
+		{
+			"name": "hike",
+			"price": "34,000",
+			"img": "hike.jpeg",
+			"type": "신발"
+		}
+		{
+			"name": "supreme",
+			"price": "77,000",
+			"img": "supreme.jpeg",
+			"type": "하의"
+		}
 ]
-
