@@ -16,31 +16,31 @@
 			"price": "30,000",
 			"img": "adasdas.jpeg",
 			"type": "신발"
-		}
+		},
 		{
 			"name": "azides",
 			"price": "25,000",
 			"img": "azides.jpeg",
 			"type": "상의"
-		}
+		},
 		{
 			"name": "ccome",
 			"price": "50,000",
 			"img": "ccome.jpeg",
 			"type": "상의"
-		}
+		},
 		{
 			"name": "spyder",
 			"price": "70,000",
 			"img": "des.jpeg",
 			"type": "상의"
-		}
+		},
 		{
 			"name": "hike",
 			"price": "34,000",
 			"img": "hike.jpeg",
 			"type": "신발"
-		}
+		},
 		{
 			"name": "supreme",
 			"price": "77,000",
